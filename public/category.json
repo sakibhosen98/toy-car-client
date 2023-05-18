@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "name": "Emily",
+    "toyName": "Fluffy",
+    "price": 19.99,
+    "rating": 4.5,
+    "subCategory": "Stuffed Animals",
+    "availableQuantity": 10,
+    "seller": "Toyland Inc.",
+    "url": "https://i.ibb.co/xs9t0P0/car-3.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Michael",
+    "toyName": "Racer",
+    "price": 24.99,
+    "rating": 4.2,
+    "subCategory": "Toy Cars",
+    "availableQuantity": 5,
+    "seller": "Speedy Toys",
+    "url": "https://i.ibb.co/PM60X1T/car-2.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Sophia",
+    "toyName": "Sparkle",
+    "price": 14.99,
+    "rating": 4.7,
+    "subCategory": "Dolls",
+    "availableQuantity": 8,
+    "seller": "Dreamy Dolls",
+    "url": "https://i.ibb.co/PM60X1T/car-2.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Daniel",
+    "toyName": "Buddy",
+    "price": 12.99,
+    "rating": 4.0,
+    "subCategory": "Action Figures",
+    "availableQuantity": 3,
+    "seller": "Fun Toys Co.",
+    "url": "https://i.ibb.co/xs9t0P0/car-3.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Olivia",
+    "toyName": "Cocoa",
+    "price": 9.99,
+    "rating": 4.8,
+    "subCategory": "Plush Toys",
+    "availableQuantity": 12,
+    "seller": "Cuddly Creations",
+    "url": "https://i.ibb.co/9hBq3CV/car-5.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Jacob",
+    "toyName": "Max",
+    "price": 29.99,
+    "rating": 4.6,
+    "subCategory": "Building Blocks",
+    "availableQuantity": 15,
+    "seller": "Brick World",
+    "url": "https://i.ibb.co/9hBq3CV/car-5.jpg"
+  }
+]
