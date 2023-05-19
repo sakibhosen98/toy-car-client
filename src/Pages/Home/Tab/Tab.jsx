@@ -1,27 +1,27 @@
 import { useEffect, useState } from "react";
-import CategoryTab from "./CategoryTab";
+import Tab1 from "./Tab1";
 
-const ShopCategory = () => {
+const Tab = () => {
   const [categorys, setCategorys] = useState([]);
 
   useEffect(() => {
     fetch('http://localhost:5000/carServices')
     .then(res => res.json())
-    .then(data => setCategorys(data.slice(2,4)))
+    .then(data => setCategorys(data.slice(0,2)))
   }, []);
 
   return (
-    <div>
-        <div className="grid mt-8 mb-12 grid-cols-2 gap-5">
+    <div className="mt-8 mb-12">
+        <div className="grid grid-cols-2 gap-5">
         {
-          categorys.map(category => <CategoryTab
+          categorys.map(category => <Tab1
           key={category._id}
           category={category}
-          ></CategoryTab>)
+          ></Tab1>)
         }
         </div>
     </div>
   );
 };
 
-export default ShopCategory;
+export default Tab;

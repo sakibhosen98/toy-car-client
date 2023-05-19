@@ -8,7 +8,7 @@ const Banner = () => {
     <div className="carousel w-full h-[650px] mb-12">
       <div id="slide1" className="carousel-item relative w-full">
         <img src={banner1} className="w-full rounded-xl" />
-        <div className="absolute h-full flex items-center left-0 rounded-xl  bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+        <div className="absolute h-full flex items-center text-center left-0 rounded-xl  bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
           <div className="text-white space-y-7 w-1/2 pl-12">
             <h2 className="text-6xl font-bold">
               Ideal Partner For An Exciting Adventure Car
@@ -24,8 +24,8 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-          <a href="#slide4" className="btn btn-circle mr-5">
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" className="btn btn-circle">
             ❮
           </a>
           <a href="#slide2" className="btn btn-circle">
@@ -35,7 +35,7 @@ const Banner = () => {
       </div>
       <div id="slide2" className="carousel-item relative w-full">
         <img src={banner2} className="w-full rounded-xl" />
-        <div className="absolute h-full flex items-center left-0  bottom-0 rounded-xl bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+        <div className="absolute h-full flex items-center text-center left-0 rounded-xl  bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
           <div className="text-white space-y-7 w-1/2 pl-12">
             <h2 className="text-6xl font-bold">
               Ideal Partner For An Exciting Adventure Car
@@ -51,8 +51,8 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-          <a href="#slide1" className="btn btn-circle mr-5">
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" className="btn btn-circle">
             ❮
           </a>
           <a href="#slide3" className="btn btn-circle">
@@ -62,7 +62,7 @@ const Banner = () => {
       </div>
       <div id="slide3" className="carousel-item relative w-full">
         <img src={banner3} className="w-full rounded-xl" />
-        <div className="absolute h-full flex items-center left-0  bottom-0 rounded-xl bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+        <div className="absolute h-full flex items-center text-center left-0 rounded-xl  bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
           <div className="text-white space-y-7 w-1/2 pl-12">
             <h2 className="text-6xl font-bold">
               Ideal Partner For An Exciting Adventure Car
@@ -78,8 +78,8 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-          <a href="#slide2" className="btn btn-circle mr-5">
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" className="btn btn-circle">
             ❮
           </a>
           <a href="#slide4" className="btn btn-circle">
@@ -89,7 +89,7 @@ const Banner = () => {
       </div>
       <div id="slide4" className="carousel-item relative w-full">
         <img src={banner4} className="w-full rounded-xl" />
-        <div className="absolute h-full flex items-center left-0 rounded-xl bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+        <div className="absolute h-full flex items-center text-center left-0 rounded-xl  bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
           <div className="text-white space-y-7 w-1/2 pl-12">
             <h2 className="text-6xl font-bold">
               Ideal Partner For An Exciting Adventure Car
@@ -105,8 +105,8 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-          <a href="#slide3" className="btn btn-circle mr-5">
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" className="btn btn-circle">
             ❮
           </a>
           <a href="#slide1" className="btn btn-circle">

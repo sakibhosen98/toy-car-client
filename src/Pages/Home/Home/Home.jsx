@@ -1,13 +1,13 @@
 import Banner from "../Banner/Banner";
 import Gellary from "../Gellary/Gellary";
-import ShopCategory from "../ShopCategory/ShopCategory";
+import TabGroups from "../TabGroups/TabGroups";
 
 const Home = () => {
   return (
     <div>
         <Banner></Banner>
         <Gellary></Gellary>
-        <ShopCategory></ShopCategory>
+        <TabGroups></TabGroups>
     </div>
   );
 };
