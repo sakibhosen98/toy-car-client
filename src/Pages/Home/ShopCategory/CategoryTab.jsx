@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-// import img from "../../../assets/toy-car/toy-1.jpg";
 
 const CategoryTab = ({ category }) => {
-  const { name, price, rating, url, id} = category;
+  const { name, price, rating, url, _id} = category;
   return (
     <div className="card card-side bg-base-100 gap-4 shadow-xl">
         <img src={url} className="w-1/2 rounded-xl" alt="Movie" />
@@ -11,7 +10,7 @@ const CategoryTab = ({ category }) => {
         <p className="text-xl">Price: ${price}</p>
         <p className="text-xl">rating: {rating}</p>
         <div className="card-actions justify-center">
-          <Link to={`/toy/${id}`} className="btn btn-secondary font-bold">View Details</Link>
+          <Link to={`/toy/${_id}`} className="btn btn-secondary font-bold">View Details</Link>
         </div>
       </div>
     </div>

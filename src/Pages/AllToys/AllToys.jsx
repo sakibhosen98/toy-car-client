@@ -1,18 +1,20 @@
-import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const AllToys = () => {
-  const toyId = useParams();
+  // const toyId = useParams();
 
-  const [details, setDetails] = useState([]);
+  // const [details, setDetails] = useState([]);
 
-  useEffect(() => {
-    fetch("/category.json")
-      .then((res) => res.json())
-      .then((data) =>
-        setDetails(data.find((detail) => detail.id === toyId.id))
-      );
-  }, []);
+  const carService = useLoaderData();
+  const {toyName,url,name,subCategory,_id,price,availableQuantity } = carService;
+
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/carServices")
+  //     .then((res) => res.json())
+  //     .then((data) =>
+  //       setDetails(data.find(detail => detail._id === toyId.id))
+  //     );
+  // }, []);
 
   return (
     <div className="overflow-x-auto w-full">
@@ -46,22 +48,22 @@ const AllToys = () => {
                 <div className="avatar">
                   <div className="mask mask-squircle w-12 h-12">
                     <img
-                      src={details?.url}
+                      src={url}
                       alt="Avatar Tailwind CSS Component"
                     />
                   </div>
                 </div>
                 <div>
-                  <div className="font-bold">{details?.name}</div>
+                  <div className="font-bold">{name}</div>
                 </div>
               </div>
             </td>
-            <td>{details?.toyName}</td>
-            <td>{details?.subCategory}</td>
-            <td>{details?.price}</td>
-            <td>{details?.availableQuantity}</td>
+            <td>{toyName}</td>
+            <td>{subCategory}</td>
+            <td>{price}</td>
+            <td>{availableQuantity}</td>
             <th>
-              <Link className="btn btn-secondary">details</Link>
+              <Link to={`/toys/${_id}`} className="btn btn-secondary">details</Link>
             </th>
           </tr>
         </tbody>

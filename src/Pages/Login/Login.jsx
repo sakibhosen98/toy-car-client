@@ -4,11 +4,13 @@
 // import { AuthContext } from '../../providers/AuthProvider';
 // import SocialLogin from '../Shared/SocialLogin/SocialLogin';
 
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
 
-    // const { signIn } = useContext(AuthContext);
+    const { signIn } = useContext(AuthContext);
     // const location = useLocation();
     // const navigate = useNavigate();
 
@@ -22,16 +24,16 @@ const Login = () => {
 
         console.log(email, password)
         
-        // signIn(email, password)
-        //     .then(result => {
-        //         const user = result.user;
-        //         console.log(user);
-        //         navigate(from, { replace: true })
+        signIn(email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                // navigate(from, { replace: true })
 
                 
 
-        //     })
-        //     .catch(error => console.log(error));
+            })
+            .catch(error => console.log(error));
     }
 
     return (
