@@ -5,6 +5,7 @@ import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SingUp/SignUp";
 import AllToys from "../Pages/AllToys/AllToys";
 import SingleToy from "../Pages/AllToys/SingleToy";
+import Blogs from "../Pages/Blogs/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: 'blogs',
+        element: <Blogs></Blogs>
       },
       {
         path: '/login',
@@ -26,7 +31,7 @@ const router = createBrowserRouter([
       {
         path: 'toy/:id',
         element: <AllToys></AllToys>,
-        loader: ({params}) => fetch(`http://localhost:5000/carServices/${params.id}`)
+        loader: ({params}) => fetch(`https://toy-car-server-gamma.vercel.app/carServices/${params.id}`)
       },
       {
         path: 'toys/:id',

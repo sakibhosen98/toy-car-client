@@ -5,7 +5,7 @@ const ShopCategory = () => {
   const [categorys, setCategorys] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/carServices')
+    fetch('https://toy-car-server-gamma.vercel.app/carServices')
     .then(res => res.json())
     .then(data => setCategorys(data.slice(2,4)))
   }, []);

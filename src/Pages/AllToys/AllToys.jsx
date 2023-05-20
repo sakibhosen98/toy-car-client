@@ -9,7 +9,7 @@ const AllToys = () => {
   const {toyName,url,name,subCategory,_id,price,availableQuantity } = carService;
 
   // useEffect(() => {
-  //   fetch("http://localhost:5000/carServices")
+  //   fetch("https://toy-car-server-gamma.vercel.app/carServices")
   //     .then((res) => res.json())
   //     .then((data) =>
   //       setDetails(data.find(detail => detail._id === toyId.id))
