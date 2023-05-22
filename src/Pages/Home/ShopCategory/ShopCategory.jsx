@@ -12,7 +12,7 @@ const ShopCategory = () => {
 
   return (
     <div>
-        <div className="grid mt-8 mb-12 grid-cols-2 gap-5">
+        <div className="grid mt-8 mb-12 md:grid-cols-2 gap-5">
         {
           categorys.map(category => <CategoryTab
           key={category._id}

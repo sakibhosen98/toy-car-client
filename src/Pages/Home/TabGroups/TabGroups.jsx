@@ -13,22 +13,22 @@ const TabGroups = () => {
     <div>
       <div className="tabs mt-12 mb-5 justify-center">
         <div
-          className={`tab text-center text-3xl text-black font-semibold ${activeTab === 0 ? 'active' : ''}`}
+          className={`tab text-center text-3xl text-black font-bold ${activeTab === 0 ? 'active' : ''}`}
           onClick={() => handleTabClick(0)}
         >
-          Tab 1
+          Truck
         </div>
         <div
-          className={`tab text-center text-3xl text-black font-semibold ${activeTab === 1 ? 'active' : ''}`}
+          className={`tab text-center text-3xl text-black font-bold ${activeTab === 1 ? 'active' : ''}`}
           onClick={() => handleTabClick(1)}
         >
-          Tab 2
+          Regular Car
         </div>
         <div
-          className={`tab text-center text-3xl text-black font-semibold ${activeTab === 2 ? 'active' : ''}`}
+          className={`tab text-center text-3xl text-black font-bold ${activeTab === 2 ? 'active' : ''}`}
           onClick={() => handleTabClick(2)}
         >
-          Tab 3
+          Mini Fire Truck
         </div>
       </div>
 

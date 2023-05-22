@@ -10,7 +10,7 @@ const CategoryTab = ({ category }) => {
         <p className="text-xl">Price: ${price}</p>
         <p className="text-xl">rating: {rating}</p>
         <div className="card-actions justify-center">
-          <Link to={`/toy/${_id}`} className="btn btn-secondary font-bold">View Details</Link>
+          <Link to={`/detail/${_id}`} className="btn btn-secondary font-bold">View Details</Link>
         </div>
       </div>
     </div>

@@ -1,12 +1,12 @@
 import Banner from "../Banner/Banner";
-import Gellary from "../Gellary/Gellary";
+import Slideshow from "../Slideshow/Slideshow";
 import TabGroups from "../TabGroups/TabGroups";
 
 const Home = () => {
   return (
     <div>
         <Banner></Banner>
-        <Gellary></Gellary>
+        <Slideshow></Slideshow>
         <TabGroups></TabGroups>
     </div>
   );

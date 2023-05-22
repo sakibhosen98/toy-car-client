@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <div className="carousel w-full h-[650px] mb-12">
       <div id="slide1" className="carousel-item relative w-full">
-        <img src={banner1} className="w-full rounded-xl" />
+        <img src="https://i.ibb.co/F5372p7/banner-1.jpg" className="w-full rounded-xl" />
         <div className="absolute h-full flex items-center text-center left-0 rounded-xl  bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
           <div className="text-white space-y-7 w-1/2 pl-12">
             <h2 className="text-6xl font-bold">
@@ -34,7 +34,7 @@ const Banner = () => {
         </div>
       </div>
       <div id="slide2" className="carousel-item relative w-full">
-        <img src={banner2} className="w-full rounded-xl" />
+        <img src="https://i.ibb.co/1r4bCsX/banner-2.jpg" className="w-full rounded-xl" />
         <div className="absolute h-full flex items-center text-center left-0 rounded-xl  bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
           <div className="text-white space-y-7 w-1/2 pl-12">
             <h2 className="text-6xl font-bold">
@@ -61,7 +61,7 @@ const Banner = () => {
         </div>
       </div>
       <div id="slide3" className="carousel-item relative w-full">
-        <img src={banner3} className="w-full rounded-xl" />
+        <img src="https://i.ibb.co/yhh0NKn/banner-3.jpg" className="w-full rounded-xl" />
         <div className="absolute h-full flex items-center text-center left-0 rounded-xl  bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
           <div className="text-white space-y-7 w-1/2 pl-12">
             <h2 className="text-6xl font-bold">
@@ -88,7 +88,7 @@ const Banner = () => {
         </div>
       </div>
       <div id="slide4" className="carousel-item relative w-full">
-        <img src={banner4} className="w-full rounded-xl" />
+        <img src="https://i.ibb.co/WP91XMP/banner-4.jpg" className="w-full rounded-xl" />
         <div className="absolute h-full flex items-center text-center left-0 rounded-xl  bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
           <div className="text-white space-y-7 w-1/2 pl-12">
             <h2 className="text-6xl font-bold">

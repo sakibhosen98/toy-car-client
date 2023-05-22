@@ -1,20 +1,9 @@
 import { Link, useLoaderData } from "react-router-dom";
 
 const AllToys = () => {
-  // const toyId = useParams();
-
-  // const [details, setDetails] = useState([]);
 
   const carService = useLoaderData();
   const {toyName,url,name,subCategory,_id,price,availableQuantity } = carService;
-
-  // useEffect(() => {
-  //   fetch("https://toy-car-server-gamma.vercel.app/carServices")
-  //     .then((res) => res.json())
-  //     .then((data) =>
-  //       setDetails(data.find(detail => detail._id === toyId.id))
-  //     );
-  // }, []);
 
   return (
     <div className="overflow-x-auto w-full">
