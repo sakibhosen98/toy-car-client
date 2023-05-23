@@ -25,13 +25,14 @@ const NavBar = () => {
       <li>
         <Link to="/alltoys">AllToys</Link>
       </li>
-      <li>
-        <Link to="/mytoys">Add Toy</Link>
-      </li>
+      
       {
         user?.email ? 
         <>
           <li><button onClick={handleLogOut}>Log Out</button></li>
+          <li>
+        <Link to="/mytoys">Add a Toy</Link>
+      </li>
           <li>
         <Link to="/bookings">My Toys</Link>
       </li>
@@ -78,7 +79,7 @@ const NavBar = () => {
         <ul className="menu menu-horizontal px-1">{navItems}</ul>
       </div>
       <div className="navbar-end" >
-      <img src={profile} className='w-12 h-12 rounded-full' />
+      {user && <img src={profile} className='w-12 h-12 rounded-full' />}
       </div>
     </div>
   );

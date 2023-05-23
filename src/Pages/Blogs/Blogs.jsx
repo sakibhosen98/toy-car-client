@@ -1,11 +1,6 @@
-/**
- * 1. What is an access token and refresh token? How do they work and where should we store them on the client-side?
- * 2. Compare SQL and NoSQL databases?
- * 3. What is express js? What is Nest JS (google it)?
- * 4. What is MongoDB aggregate and how does it work (google it)?
- */
 
 const Blogs = () => {
+  
   return (
     <div className="w-3/4 py-12 mx-auto">
       <div className="mb-5">
