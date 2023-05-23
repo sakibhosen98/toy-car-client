@@ -7,7 +7,7 @@ const Bookings = () => {
   const [bookings, setBookings] = useState([]);
 
 
-  const url = `http://localhost:5000/bookings?email=${user?.email}`;
+  const url = `https://toy-car-server-gamma.vercel.app/bookings?email=${user?.email}`;
   useEffect(() => {
     fetch(url)
     .then(res => res.json())
@@ -29,7 +29,7 @@ console.log(bookings)
         </th>
         <th>Picture</th>
         <th>Seller Name</th>
-        <th>Seller Email</th>
+        <th>SellerEmail</th>
         <th>Price</th>
         <th>Quantity</th>
         <th>Description</th>

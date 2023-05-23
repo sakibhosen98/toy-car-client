@@ -12,6 +12,7 @@ const ShopCategory = () => {
 
   return (
     <div>
+      {/* all category show  here */}
         <div className="grid mt-8 mb-12 md:grid-cols-2 gap-5">
         {
           categorys.map(category => <CategoryTab
