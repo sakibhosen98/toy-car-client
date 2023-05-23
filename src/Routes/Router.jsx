@@ -6,6 +6,7 @@ import SignUp from "../Pages/SingUp/SignUp";
 import Blogs from "../Pages/Blogs/Blogs";
 import ViewDetails from "../Pages/ViewDetails/ViewDetails";
 import SingleData from "../Pages/AllToys/AllToyData";
+import NotFound from "../Pages/NotFound/NotFound";
 // import AddToys from "../Pages/AllToys/AddToys";
 
 const router = createBrowserRouter([
@@ -37,16 +38,10 @@ const router = createBrowserRouter([
       {
         path: '/alltoys',
         element: <SingleData></SingleData> ,
-        loader: () => fetch('http://localhost:5000/carServices')
-      },
-      // {
-      //   path: '/alltoys',
-      //   element: <AddToys></AddToys>,
-      //   loader: () => fetch('http://localhost:5000/carServices')
-      // },
-      
-      
-    ]
+        loader: () => fetch('https://toy-car-server-gamma.vercel.app/carServices')
+      } 
+    ],
+    errorElement: <NotFound></NotFound>
   },
 ]);
 
