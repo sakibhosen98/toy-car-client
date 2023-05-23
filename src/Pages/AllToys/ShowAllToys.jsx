@@ -1,9 +1,10 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const AllToys = () => {
 
-  const carService = useLoaderData();
-  const {toyName,url,name,subCategory,_id,price,availableQuantity } = carService;
+const ShowAllToys = ({service}) => {
+
+  const {toyName,url,name,subCategory,_id,price,availableQuantity } = service;
+
 
   return (
     <div className="overflow-x-auto w-full">
@@ -34,14 +35,6 @@ const AllToys = () => {
             </th>
             <td>
               <div className="flex items-center space-x-3">
-                <div className="avatar">
-                  <div className="mask mask-squircle w-12 h-12">
-                    <img
-                      src={url}
-                      alt="Avatar Tailwind CSS Component"
-                    />
-                  </div>
-                </div>
                 <div>
                   <div className="font-bold">{name}</div>
                 </div>
@@ -52,7 +45,7 @@ const AllToys = () => {
             <td>{price}</td>
             <td>{availableQuantity}</td>
             <th>
-              <Link to={`/toys/${_id}`} className="btn btn-secondary">details</Link>
+              <Link className="btn btn-secondary">View details</Link>
             </th>
           </tr>
         </tbody>
@@ -61,4 +54,8 @@ const AllToys = () => {
   );
 };
 
-export default AllToys;
+
+export default ShowAllToys;
+
+
+

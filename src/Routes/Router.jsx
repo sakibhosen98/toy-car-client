@@ -3,10 +3,10 @@ import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SingUp/SignUp";
-import AllToys from "../Pages/AllToys/AllToys";
-import SingleToy from "../Pages/AllToys/SingleToy";
 import Blogs from "../Pages/Blogs/Blogs";
 import ViewDetails from "../Pages/ViewDetails/ViewDetails";
+import SingleData from "../Pages/AllToys/AllToyData";
+// import AddToys from "../Pages/AllToys/AddToys";
 
 const router = createBrowserRouter([
   {
@@ -35,9 +35,17 @@ const router = createBrowserRouter([
         loader: ({params}) => fetch(`https://toy-car-server-gamma.vercel.app/carServices/${params.id}`)
       },
       {
-        path: 'toys/:id',
-        element: <SingleToy></SingleToy>
-      }
+        path: '/alltoys',
+        element: <SingleData></SingleData> ,
+        loader: () => fetch('http://localhost:5000/carServices')
+      },
+      // {
+      //   path: '/alltoys',
+      //   element: <AddToys></AddToys>,
+      //   loader: () => fetch('http://localhost:5000/carServices')
+      // },
+      
+      
     ]
   },
 ]);

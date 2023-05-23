@@ -1,7 +1,4 @@
-import banner1 from "../../../assets/banner/banner-1.jpg";
-import banner2 from "../../../assets/banner/banner-2.jpg";
-import banner3 from "../../../assets/banner/banner-3.jpg";
-import banner4 from "../../../assets/banner/banner-4.jpg";
+
 
 const Banner = () => {
   return (
@@ -62,7 +59,7 @@ const Banner = () => {
       </div>
       <div id="slide3" className="carousel-item relative w-full">
         <img src="https://i.ibb.co/yhh0NKn/banner-3.jpg" className="w-full rounded-xl" />
-        <div className="absolute h-full flex items-center text-center left-0 rounded-xl  bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+        <div className="absolute h-full flex items-center justify-center left-0 rounded-xl  bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
           <div className="text-white space-y-7 w-1/2 pl-12">
             <h2 className="text-6xl font-bold">
               Ideal Partner For An Exciting Adventure Car
