@@ -9,6 +9,8 @@ import SingleData from "../Pages/AllToys/AllToyData";
 import NotFound from "../Pages/NotFound/NotFound";
 import AddToys from "../Pages/MyToys/AddToys";
 import SingleToy from "../Pages/AllToys/SingleToy";
+import Bookings from "../Pages/MyToys/bookings";
+import PrivateRoute from "./PrivateRoute";
 // import AddToys from "../Pages/AllToys/AddToys";
 
 const router = createBrowserRouter([
@@ -51,6 +53,10 @@ const router = createBrowserRouter([
         path: '/mytoys',
         element: <AddToys></AddToys>,
         loader: () => fetch('https://toy-car-server-gamma.vercel.app/carServices')
+      },
+      {
+        path: 'bookings',
+        element: <PrivateRoute><Bookings></Bookings></PrivateRoute>
       }
     ],
     errorElement: <NotFound></NotFound>

@@ -20,13 +20,21 @@ const AddToys = () => {
       const price = form.price.value;
       const quantity = form.quantity.value;
       const description = form.description.value;
+      const rating = form.rating.value;
+      const picture = form.picture.value;
+      const sellerName = form.sellerName.value;
+      const subCategory = form.subCategory.value;
       console.log(name, email, price, quantity, description)
       const booking = {
         seller: name,
         email,
         price: price,
         availbleQuantity: quantity,
-        description: description
+        description: description,
+        rating,
+        sellerName,
+        subCategory,
+        picture
       }
       console.log(booking);
 
@@ -53,8 +61,8 @@ const AddToys = () => {
 
   return (
     <div className="">
-      <h2 className="text-center text-3xl"> Check Out : {name} </h2>
-      <form onSubmit={handleAddToys} className="w-3/4 mx-auto">
+      <h2 className="text-center text-3xl"> Add a Toy : {name} </h2>
+      <form onSubmit={handleAddToys} className=" w-3/4 mx-auto">
         <div className=" gap-6">
         <div className="form-control">
           <label className="label">
@@ -85,6 +93,30 @@ const AddToys = () => {
             <span className="label-text">Description</span>
           </label>
           <input type="text" name="description"  placeholder="description" className="input input-bordered" />
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Rating</span>
+          </label>
+          <input type="number" name="rating"  placeholder="rating" className="input input-bordered" />
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Picture</span>
+          </label>
+          <input type="url" name="picture"  placeholder="url" className="input input-bordered" />
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Seller Name</span>
+          </label>
+          <input type="text" name="sellerName"  placeholder="seller name" className="input input-bordered" />
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Sub-Category</span>
+          </label>
+          <input type="text" name="subCategory"  placeholder="sub-category" className="input input-bordered" />
         </div>
         
         </div>

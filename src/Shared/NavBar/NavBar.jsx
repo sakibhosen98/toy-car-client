@@ -26,10 +26,18 @@ const NavBar = () => {
         <Link to="/alltoys">AllToys</Link>
       </li>
       <li>
-        <Link to="/mytoys">MyToys</Link>
+        <Link to="/mytoys">Add Toy</Link>
       </li>
       {
-        user?.email ? <li><button onClick={handleLogOut}>Log Out</button></li> : <li><Link to="/login">Login</Link></li>
+        user?.email ? 
+        <>
+          <li><button onClick={handleLogOut}>Log Out</button></li>
+          <li>
+        <Link to="/bookings">My Toys</Link>
+      </li>
+        </>
+        
+        : <li><Link to="/login">Login</Link></li>
         
       }
     </>
