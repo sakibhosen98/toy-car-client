@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'detail/:id',
-        element: <ViewDetails></ViewDetails>,
+        element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
         loader: ({params}) => fetch(`https://toy-car-server-gamma.vercel.app/carServices/${params.id}`)
       },
       {
