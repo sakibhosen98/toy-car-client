@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ShowAllToys = ({service}) => {
 
-  const {toyName,url,name,subCategory,_id,price,availableQuantity } = service;
+  const {toyName,name,subCategory,price,availableQuantity } = service;
 
 
   return (

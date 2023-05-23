@@ -1,11 +1,11 @@
 import { useContext } from "react";
-// import { useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
-const AddToys = ({service}) => {
-  // const services = useLoaderData();
+const AddToys = () => {
+  const service = useLoaderData();
 
-  console.log(service)
+  // console.log(service)
   const {name} = service;
 
   const {user} = useContext(AuthContext);
@@ -16,11 +16,16 @@ const AddToys = ({service}) => {
       const form = event.target;
       const name = form.name.value;
       const email = user?.email;
-      const password = form.password.value;
-      console.log(name, email, password)
+      const price = form.price.value;
+      const quantity = form.quantity.value;
+      const description = form.description.value;
+      console.log(name, email, price, quantity, description)
       const booking = {
         seller: name,
         email,
+        price: price,
+        availbleQuantity: quantity,
+        description: description
       }
       console.log(booking);
 
@@ -57,10 +62,23 @@ const AddToys = ({service}) => {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Password</span>
+            <span className="label-text">Price</span>
           </label>
-          <input type="text" name="password" placeholder="password" className="input input-bordered" />
+          <input type="number" name="price" placeholder="price" className="input input-bordered" />
         </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Quantity</span>
+          </label>
+          <input type="number" name="quantity"  placeholder="Quantity" className="input input-bordered" />
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Description</span>
+          </label>
+          <input type="text" name="description"  placeholder="description" className="input input-bordered" />
+        </div>
+        
         </div>
         <div className="form-control mt-6">
           <input className="btn btn-primary btn-block" type="submit" value="AddToys" />
