@@ -8,6 +8,7 @@ import ViewDetails from "../Pages/ViewDetails/ViewDetails";
 import SingleData from "../Pages/AllToys/AllToyData";
 import NotFound from "../Pages/NotFound/NotFound";
 import AddToys from "../Pages/MyToys/AddToys";
+import SingleToy from "../Pages/AllToys/SingleToy";
 // import AddToys from "../Pages/AllToys/AddToys";
 
 const router = createBrowserRouter([
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
         path: '/alltoys',
         element: <SingleData></SingleData> ,
         loader: () => fetch('https://toy-car-server-gamma.vercel.app/carServices')
+      },
+      {
+        path: 'singleToy/:id',
+        element: <SingleToy></SingleToy>,
+        loader: ({params}) => fetch(`http://localhost:5000/carServices/${params.id}`)
       },
       {
         path: '/mytoys',
