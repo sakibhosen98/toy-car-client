@@ -41,12 +41,12 @@ const router = createBrowserRouter([
       },
       {
         path: '/alltoys',
-        element: <SingleData></SingleData> ,
+        element: <SingleData></SingleData>,
         loader: () => fetch('https://toy-car-server-gamma.vercel.app/carServices')
       },
       {
         path: 'singleToy/:id',
-        element: <SingleToy></SingleToy>,
+        element: <PrivateRoute><SingleToy></SingleToy></PrivateRoute>,
         loader: ({params}) => fetch(`https://toy-car-server-gamma.vercel.app/carServices/${params.id}`)
       },
       {
